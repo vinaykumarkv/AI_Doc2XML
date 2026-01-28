@@ -50,7 +50,7 @@ python main.py
 ```
 
 The application will launch in your default browser at `http://localhost:7860`
-
+![Application Screensot](img.png "Application Gradio UI")
 ## 📖 Usage Guide
 
 ### Basic Workflow
