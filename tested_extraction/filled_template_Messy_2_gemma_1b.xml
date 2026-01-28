@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatientReceipt>
+
+    <ReceiptHeader>
+        <ReceiptNumber>R-77A</ReceiptNumber>
+        <ReceiptDate format="2026-01-26">
+            <Date>2026-01-26</Date>
+        </ReceiptDate>
+
+        <Facility>
+            <Name>
+                <Name>Medical Clinic</Name>
+            </Name>
+            <Address>
+                <Street>123 Main St</Street>
+                <City>Anytown</City>
+                <State>CA</State>
+                <PostalCode>91234</PostalCode>
+                <Country>USA</Country>
+            </Address>
+            <Phone>555-123-4567</Phone>
+            <Email>billing@example.com</Email>
+        </Facility>
+    </ReceiptHeader>
+
+    <Patient>
+        <PatientID>John D</PatientID>
+        <FirstName>John</FirstName>
+        <LastName>D</LastName>
+        <DateOfBirth format="YYYY-MM-DD">1970-01-01</DateOfBirth>
+        <Gender allowedValues="Male,Female,Other,Unknown">Male</Gender>
+        <Contact>
+            <Phone>555-123-4567</Phone>
+            <Email>john.d@example.com</Email>
+        </Contact>
+    </Patient>
+
+    <Services>
+        <Service>
+            <Code>XR-X-Ray-1</Code>
+            <Description>X-Ray Scan</Description>
+            <ServiceDate format="2026-01-26">2026-01-26</ServiceDate>
+            <Quantity type="number">250</Quantity>
+            <UnitPrice currency="ISO-4217">100.00</UnitPrice>
+            <TotalPrice currency="ISO-4217">25000.00</TotalPrice>
+        </Service>
+    </Services>
+
+    <PaymentSummary>
+        <Subtotal currency="ISO-4217">25000.00</Subtotal>
+        <Tax currency="ISO-4217">0.00</Tax>
+        <Discount currency="ISO-4217">0.00</Discount>
+        <TotalAmount currency="ISO-4217">25000.00</TotalAmount>
+        <AmountPaid currency="ISO-4217">50.00</AmountPaid>
+        <BalanceDue currency="ISO-4217">50.00</BalanceDue>
+        <PaymentMethod>Credit Card</PaymentMethod>
+        <PaymentReference>1234567890</PaymentReference>
+    </PaymentSummary>
+
+</PatientReceipt>

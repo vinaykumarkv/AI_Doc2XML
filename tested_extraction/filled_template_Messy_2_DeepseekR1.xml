@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatientReceipt>
+
+    <ReceiptHeader>
+        <ReceiptNumber>R-77A</ReceiptNumber>
+
+        <ReceiptDate format="YYYY-MM-DD">2026-01-26</ReceiptDate>
+
+        <Facility>
+            <Name>Example Medical Clinic</Name>
+
+            <Address>
+                <Street></Street>
+                <City></City>
+                <State></State>
+                <PostalCode></PostalCode>
+                <Country></Country>
+            </Address>
+
+            <Phone>555-123-4567</Phone>
+
+            <Email></Email>
+        </Facility>
+    </ReceiptHeader>
+
+    <Patient>
+        <PatientID></PatientID>
+
+        <FirstName>John</FirstName>
+
+        <LastName>D.</LastName>
+
+        <DateOfBirth format="YYYY-MM-DD"></DateOfBirth>
+
+        <Gender allowedValues="Male,Female,Other,Unknown"></Gender>
+
+        <Contact>
+            <Phone></Phone>
+            <Email></Email>
+        </Contact>
+    </Patient>
+
+    <Services>
+        <!-- Repeat Service for each billed item -->
+        <Service>
+            <Code>XR</Code>
+
+            <Description>X-Ray</Description>
+
+            <ServiceDate format="YYYY-MM-DD"></ServiceDate>
+
+            <Quantity type="number">1</Quantity>
+
+            <UnitPrice currency="USD">250.00</UnitPrice>
+
+            <TotalPrice currency="USD">250.00</TotalPrice>
+        </Service>
+    </Services>
+
+    <PaymentSummary>
+        <Subtotal currency="USD">250.00</Subtotal>
+
+        <Tax currency="USD"></Tax>
+
+        <Discount currency="USD"></Discount>
+
+        <TotalAmount currency="USD"></TotalAmount>
+
+        <AmountPaid currency="USD"></AmountPaid>
+
+        <BalanceDue currency="USD">50.00</BalanceDue>
+
+        <PaymentMethod></PaymentMethod>
+
+        <PaymentReference></PaymentReference>
+    </PaymentSummary>
+
+    <Notes>
+        Insurance pending
+        Pt owes ~50
+    </Notes>
+
+</PatientReceipt>

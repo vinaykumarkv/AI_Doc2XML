@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatientReceipt>
+
+    <ReceiptHeader>
+        <ReceiptNumber>R-77A</ReceiptNumber>
+        <ReceiptDate>2026-01-26</ReceiptDate>
+        <Facility>
+            <Name>Example Medical Clinic</Name>
+            <Address>
+                <Street></Street>
+                <City></City>
+                <State></State>
+                <PostalCode></PostalCode>
+                <Country></Country>
+            </Address>
+            <Phone>555-123-4567</Phone>
+            <Email></Email>
+        </Facility>
+    </ReceiptHeader>
+
+    <Patient>
+        <PatientID>(illegible) John D.</PatientID>
+        <FirstName>John</FirstName>
+        <LastName>D.</LastName>
+        <DateOfBirth></DateOfBirth>
+        <Gender>Male</Gender>
+        <Contact>
+            <Phone></Phone>
+            <Email></Email>
+        </Contact>
+    </Patient>
+
+    <Services>
+        <Service>
+            <Code>CONS</Code>
+            <Description>Consult</Description>
+            <ServiceDate>2026-01-26</ServiceDate>
+            <Quantity>1</Quantity>
+            <UnitPrice>100</UnitPrice>
+            <TotalPrice>100</TotalPrice>
+        </Service>
+        <Service>
+            <Code>LAB</Code>
+            <Description>Blood work</Description>
+            <ServiceDate>2026-01-26</ServiceDate>
+            <Quantity>1</Quantity>
+            <UnitPrice>80</UnitPrice>
+            <TotalPrice>80</TotalPrice>
+        </Service>
+    </Services>
+
+    <PaymentSummary>
+        <Subtotal currency="USD">180</Subtotal>
+        <Tax currency="USD"></Tax>
+        <Discount currency="USD"></Discount>
+        <TotalAmount currency="USD">180</TotalAmount>
+        <AmountPaid currency="USD">180</AmountPaid>
+        <BalanceDue currency="USD">0</BalanceDue>
+        <PaymentMethod>Cash</PaymentMethod>
+        <PaymentReference></PaymentReference>
+    </PaymentSummary>
+
+    <Notes>Follow-up next week. No refund.</Notes>
+
+</PatientReceipt>

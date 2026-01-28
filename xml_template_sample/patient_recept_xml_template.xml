@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PatientReceipt>
+
+    <ReceiptHeader>
+        <ReceiptNumber>
+            <!-- Unique receipt identifier found on the document -->
+        </ReceiptNumber>
+
+        <ReceiptDate format="YYYY-MM-DD">
+            <!-- Date the receipt was issued -->
+        </ReceiptDate>
+
+        <Facility>
+            <Name>
+                <!-- Legal name of the healthcare facility -->
+            </Name>
+
+            <Address>
+                <Street>
+                    <!-- Facility street address -->
+                </Street>
+                <City>
+                    <!-- Facility city -->
+                </City>
+                <State>
+                    <!-- Facility state, province, or region -->
+                </State>
+                <PostalCode>
+                    <!-- Facility postal or ZIP code -->
+                </PostalCode>
+                <Country>
+                    <!-- Facility country -->
+                </Country>
+            </Address>
+
+            <Phone>
+                <!-- Facility contact phone number -->
+            </Phone>
+
+            <Email>
+                <!-- Facility billing or contact email -->
+            </Email>
+        </Facility>
+    </ReceiptHeader>
+
+    <Patient>
+        <PatientID>
+            <!-- Patient identifier or medical record number -->
+        </PatientID>
+
+        <FirstName>
+            <!-- Patient first name -->
+        </FirstName>
+
+        <LastName>
+            <!-- Patient last name -->
+        </LastName>
+
+        <DateOfBirth format="YYYY-MM-DD">
+            <!-- Patient date of birth -->
+        </DateOfBirth>
+
+        <Gender allowedValues="Male,Female,Other,Unknown">
+            <!-- Patient gender -->
+        </Gender>
+
+        <Contact>
+            <Phone>
+                <!-- Patient phone number -->
+            </Phone>
+            <Email>
+                <!-- Patient email address -->
+            </Email>
+        </Contact>
+    </Patient>
+
+    <Services>
+        <!-- Repeat Service for each billed item -->
+        <Service>
+            <Code>
+                <!-- Procedure or service code -->
+            </Code>
+
+            <Description>
+                <!-- Description of service -->
+            </Description>
+
+            <ServiceDate format="YYYY-MM-DD">
+                <!-- Date service was performed -->
+            </ServiceDate>
+
+            <Quantity type="number">
+                <!-- Quantity of service units -->
+            </Quantity>
+
+            <UnitPrice currency="ISO-4217">
+                <!-- Price per unit -->
+            </UnitPrice>
+
+            <TotalPrice currency="ISO-4217">
+                <!-- Quantity multiplied by UnitPrice -->
+            </TotalPrice>
+        </Service>
+    </Services>
+
+    <PaymentSummary>
+        <Subtotal currency="ISO-4217">
+            <!-- Sum of all service totals before tax -->
+        </Subtotal>
+
+        <Tax currency="ISO-4217">
+            <!-- Tax amount if present -->
+        </Tax>
+
+        <Discount currency="ISO-4217">
+            <!-- Discount applied if any -->
+        </Discount>
+
+        <TotalAmount currency="ISO-4217">
+            <!-- Final amount charged -->
+        </TotalAmount>
+
+        <AmountPaid currency="ISO-4217">
+            <!-- Amount paid by patient -->
+        </AmountPaid>
+
+        <BalanceDue currency="ISO-4217">
+            <!-- Remaining balance -->
+        </BalanceDue>
+
+        <PaymentMethod>
+            <!-- Cash, Credit Card, Insurance, etc. -->
+        </PaymentMethod>
+
+        <PaymentReference>
+            <!-- Transaction or authorization reference -->
+        </PaymentReference>
+    </PaymentSummary>
+
+    <Notes>
+        <!-- Additional notes or disclaimers from the document -->
+    </Notes>
+
+</PatientReceipt>
